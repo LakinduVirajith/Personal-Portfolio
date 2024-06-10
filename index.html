@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1792955820.js" crossorigin="anonymous"></script>
+    <title>Lakindu Virajith Personal Portfolio Website</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="source/images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Lakindu</span><br /> Virajith From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="source/images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am hard-working, self-motivated, honest, and always willing to learn new skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+                
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Application</span><br />Development of modern web applications using frameworks like React, Angular and NextJS.</li>
+                            <li><span>Mobile Application</span><br />Creation of Android apps with Java and Kotlin, Flutter, and React Native.</li>
+                            <li><span>Desktop Application</span><br />Building cross-platform desktop apps with Electron.</li>
+                            <li><span>DevOps Engineering</span><br />Implementing CI/CD pipelines and automation using Github Actions, Docker, and Kubernetes.</li>
+                            <li><span>Cloud Engineering</span><br />Managing cloud services on AWS and Azure, focusing on scalability and resilience.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Uniro IT Solutions Frontend Developer | Feb - Oct (8 months), 2023</span><br /><br />
+                                Developed web applications using Angular framework, ensuring high performance and responsiveness.<br /><br />
+                                Explored and gained proficiency in Ionic and Spring Boot frameworks during the internship period.<br /><br />
+                                Demonstrated strong self-learning abilities, continuously enhancing skills and adapting to new technologies.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BSc (Hons) in Information Technology Specialising in Software Engineering - 2021</span><br />Undergraduate Student</li>
+                            <li><span>G.C.E. Advance Level Examination - 2019</span><br />1C, 2S - Physical Science Stream</li>
+                            <li><span>G.C.E. Ordinary Level Examination - 2016</span><br />4A, 3B, 2C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Application Design</h2>
+                    <p>We specialize in creating robust and scalable web applications that meet modern standards and provide seamless user experiences. Utilizing cutting-edge frameworks such as React, Angular, and NextJS, our team ensures your web applications are not only visually appealing but also highly functional and responsive. Whether you need an e-commerce platform, a content management system, or a custom web solution, we have the expertise to deliver exceptional results.</p>
+                    <a href="https://github.com/LakinduVirajith">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Desktop Application Design</h2>
+                    <p>Our desktop application design services focus on developing powerful and intuitive software for various operating systems, including Windows, macOS, and Linux. We leverage technologies like Electron to create applications that enhance productivity, streamline workflows, and provide rich functionalities. From enterprise-grade solutions to consumer software, our applications are built to perform efficiently and meet your specific needs.</p>
+                    <a href="https://github.com/LakinduVirajith">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Mobile Application Design</h2>
+                    <p>In the mobile-first world, we design and develop high-performance mobile applications for Android platforms. Our expertise includes native development with Java and Kotlin, as well as cross-platform solutions using Flutter and React Native. We focus on creating apps that offer a seamless user experience, optimized performance, and are visually stunning. Whether it's a utility app, a social networking app, or a complex enterprise application, we ensure it meets the highest standards.</p>
+                    <a href="https://github.com/LakinduVirajith">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="source/images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>CalcPal</h3>
+                        <p>CalcPal is a dyscalculia diagnosis application built with Flutter.</p>
+                        <a href="https://github.com/LakinduVirajith/CalcPal---Mobile-Application">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>QR Scanner</h3>
+                        <p>This app allows you to quickly scan QR codes to mark attendance.</p>
+                        <a href="https://github.com/LakinduVirajith/QR-Scanner---Flutter">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>The Museum Cinemaya</h3>
+                        <p>This app allows you to store and manage movie details, creating your own personalized museum of cinema.</p>
+                        <a href="https://github.com/LakinduVirajith/The-Museum-Cinemaya---Desktop-Frontend">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/LakinduVirajith" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> lakinduvirajith@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +94 77 278 0771</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/lakindu.virajith.1"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lakindu_virajith/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/lakindu-virajith-de-zoysa-59b0b925b?originalSubdomain=lk"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/LakinduVirajith"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="source/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © vp code labs.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right  = "0"
+        }
+
+        function closemenu(){
+            sidemenu.style.right  = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWocSvS_dOUx6GlMXpcB0e8ZbvkuW9wQcTmFhVbWNSIgcFC0anit4MJiWdyrzsQenx/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
