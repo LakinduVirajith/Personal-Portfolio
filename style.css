@@ -35,7 +35,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 280px;
 }
 
 nav ul li{
@@ -73,7 +73,6 @@ nav ul li a:hover::after{
 
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px
 }
 
 .header-text h1 span{
@@ -202,8 +201,8 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* PORTFOLIO */
-#portfolio{
+/* WORKS */
+#work{
     padding: 50px 0;
 }
 
@@ -287,6 +286,35 @@ nav ul li a:hover::after{
 
 .btn{
     background: #ff004f;
+}
+
+/* CERTIFICATION */
+#certification{
+    padding-bottom: 100px;
+}
+
+.certification-left{
+    flex-basis: 35%;
+}
+
+.certification-left img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.certification-right{
+    flex-basis: 60%;
+}
+.download-certification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-certification p{
+    width: 60%;
+}
+.download-certification a{
+    margin: 10px 0px;
 }
 
 /* CONTACT */
